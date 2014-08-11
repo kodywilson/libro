@@ -1,17 +1,14 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is desiged to track ratings and reviews of books.
 
-Things you may want to cover:
-
-* Ruby version
+* Ruby version = 1.9.3
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database creation = Using sqlite at first.
 
 * Database initialization
 
