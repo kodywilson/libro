@@ -13,6 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # Use rspec instead of test unit
 gem 'rspec-rails'
+# Test coverage with SimpleCov
+gem 'simplecov', :require => false, :group => :test
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
