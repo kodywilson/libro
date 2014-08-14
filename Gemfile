@@ -16,6 +16,8 @@ gem 'refills'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
+# Use carrierwave for picture uploads
+gem 'carrierwave'
 # Use rspec instead of test unit
 gem 'rspec-rails'
 # Test coverage with SimpleCov
