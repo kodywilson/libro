@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @book.summary %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @book.picture %>
+</p>
+
+<p>
+  <strong>Contributor:</strong>
+  <%= @book.contributor %>
+</p>
+
+<p>
+  <strong>Isbn:</strong>
+  <%= @book.isbn %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @book.rating %>
+</p>
+
+<p>
+  <strong>Following:</strong>
+  <%= @book.following %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @book.approved %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @book.active %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book), class: "sho_button" %> |
+<%= link_to 'Back', books_path, class: "bak_button" %>

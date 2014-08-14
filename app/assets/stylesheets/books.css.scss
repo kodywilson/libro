@@ -1,0 +1,28 @@
+.book {
+  border: solid 1px #AAA;
+  margin: 20px 0;
+  padding: 7px 12px;
+  @include border-top-radius(5px);
+  @include border-bottom-radius(5px);
+  @include border-left-radius(5px);
+  @include border-right-radius(5px);
+  @include transition(all, 500ms, ease-in-out);
+
+  &:hover { background-color: #F8FCCF; }
+
+  h2 {
+    margin: 0;
+    a { text-decoration: none; }
+  }
+
+  p {
+    margin: 2;
+    a { text-decoration: none; }
+  }
+}
+
+.new_book {
+  @include button(simple, #63D1F4	);
+  text-decoration: none;
+  font-size: 16px;
+}
