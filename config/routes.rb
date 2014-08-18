@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'pages/info'
+
+  root :to => redirect('/books')
   resources :books
 
   # The priority is based upon order of creation: first created -> highest priority.
