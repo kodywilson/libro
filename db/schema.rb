@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140813231328) do
+ActiveRecord::Schema.define(version: 20140818231359) do
 
   create_table "books", force: true do |t|
     t.string   "title"
@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(version: 20140813231328) do
     t.boolean  "following"
     t.boolean  "approved"
     t.boolean  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "reviews", force: true do |t|
+    t.string   "user_name"
+    t.text     "body"
+    t.integer  "book_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
