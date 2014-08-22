@@ -1,5 +1,4 @@
-source 'http://rubygems.nordstrom.net'
-
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -23,8 +22,7 @@ gem 'rspec-rails'
 # Test coverage with SimpleCov
 gem 'simplecov', :require => false, :group => :test
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
-
+#gem 'therubyracer'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
