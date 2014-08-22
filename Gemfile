@@ -17,6 +17,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # Use carrierwave for picture uploads
 gem 'carrierwave'
+# Use devise, cancan, and rolify for users, admins, etc
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
 # Use rspec instead of test unit
 gem 'rspec-rails'
 # Test coverage with SimpleCov

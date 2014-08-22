@@ -12,6 +12,12 @@
   Libro | <a href="/books">Books</a> | <a href="/reviews">Reviews</a>
 </div>
 <div id="container">
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
   <%= yield %>
 </div>
 
