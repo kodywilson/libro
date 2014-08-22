@@ -2,9 +2,11 @@
 
 This application is desiged to track ratings and reviews of books.
 
-* Ruby version = 1.9.3
+* Ruby version = 2.0.0
 
 * System dependencies
+
+Using thin as the web server.
 
 * Configuration
 
