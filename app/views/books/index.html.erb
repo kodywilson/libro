@@ -2,7 +2,7 @@
 <% @books.each do |book| %>
   <div class="book">
     <h2><%= book.title %></h2>
-    <p>Cover: <%= link_to image_tag(book.picture_url, :width => 100), book if book.picture.present? %></p>
+    <p><%= link_to image_tag(book.picture_url, :width => 100), book if book.picture.present? %></p>
     <p>Author: <%= book.author %> |
     ISBN: <%= book.isbn %> |
     Summary: <%= book.summary %></p>
