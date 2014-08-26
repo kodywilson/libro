@@ -29,9 +29,16 @@
 </p>
 
 <p>
-  <strong>Rating:</strong>
-  <%= @book.rating %>
+  <strong>Overall Rating:</strong>
+  <%= rating_for @book, "overall" %>
 </p>
+<% if user_signed_in? %>
+  <p>
+    <strong>Your Rating:</strong>
+    <%= rating_for_user @book, current_user, "overall" %>
+  </p>
+<% else %>
+<% end %>
 
 <p>
   <strong>Following:</strong>

@@ -35,6 +35,10 @@
     <%= f.label :isbn %><br>
     <%= f.number_field :isbn %>
   </div>
+  <p>
+    <strong>Overall Rating:</strong>
+    <%= rating_for @book, "overall" %>
+  </p>
   <div class="field">
     <%= f.label :rating %><br>
     <%= f.number_field :rating %>
