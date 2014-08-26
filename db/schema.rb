@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140826140308) do
+ActiveRecord::Schema.define(version: 20140826203155) do
 
   create_table "books", force: true do |t|
     t.string   "title"
@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20140826140308) do
     t.string   "picture"
     t.string   "contributor"
     t.integer  "isbn"
-    t.integer  "rating"
     t.boolean  "following"
     t.boolean  "approved"
     t.boolean  "active"

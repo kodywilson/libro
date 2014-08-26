@@ -7,7 +7,6 @@ class CreateBooks < ActiveRecord::Migration
       t.string :picture
       t.string :contributor
       t.integer :isbn
-      t.integer :rating
       t.boolean :following
       t.boolean :approved
       t.boolean :active
