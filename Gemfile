@@ -21,6 +21,8 @@ gem 'carrierwave'
 gem 'devise'
 gem 'cancan'
 gem 'rolify'
+# Use letsrate for rating system
+gem 'letsrate'
 # Use rspec instead of test unit
 gem 'rspec-rails'
 # Test coverage with SimpleCov
