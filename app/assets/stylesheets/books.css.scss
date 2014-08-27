@@ -8,15 +8,20 @@
   @include border-right-radius(5px);
   @include transition(all, 500ms, ease-in-out);
 
-  &:hover { background-color: #F8FCCF; }
+  &:hover { background-color: #F8FCCF;
+    h2 { color: black; }
+    p { color: black; }
+  }
 
   h2 {
     margin: 0;
+    color: white;
     a { text-decoration: none; }
   }
 
   p {
     margin: 2;
+    color: white;
     a { text-decoration: none; }
   }
 }

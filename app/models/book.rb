@@ -3,4 +3,5 @@ class Book < ActiveRecord::Base
   mount_uploader :picture, PictureUploader
   validates_presence_of :picture, :on => :create
   letsrate_rateable "overall"
+  resourcify
 end

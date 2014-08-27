@@ -4,6 +4,7 @@ body {
   background-color: #FFF;
   font-size: 14px;
   font-family: $verdana;
+  @include background-image(url("library6.jpg"));
 }
 
 header.navigation {
