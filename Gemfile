@@ -22,7 +22,7 @@ gem 'devise'
 gem 'cancan'
 gem 'rolify'
 # Use letsrate for rating system
-gem 'letsrate'
+gem 'letsrate', :git => "git://github.com/iammyr/letsrate.git"
 # Use rspec instead of test unit
 gem 'rspec-rails'
 # Test coverage with SimpleCov
