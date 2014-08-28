@@ -4,8 +4,8 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    @books = Book.order("title").page(params[:page]).per(3)
-#    @books = Kaminari.paginate_array(Book.first(3)).page(params[:page])
+    @search = Book.search(params[:q])
+    @books = @search.result.order("title").page(params[:page]).per(3)
   end
 
   # GET /books/1

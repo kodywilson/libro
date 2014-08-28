@@ -2,6 +2,20 @@
 <div class="books">
 
 <div class="noticeme">
+<%= search_form_for @search do |f| %>
+  <div class="field">
+    <b><%= f.label :title_cont, "Title contains:" %></b>
+    <%= f.text_field :title_cont %>
+  </div>
+  <div class="field">
+    <b><%= f.label :author_cont, "Author contains:" %></b>
+    <%= f.text_field :author_cont %>
+  </div>
+  <div class="actions"><%= f.submit "Search" %></div>
+<% end %>
+</div>
+
+<div class="noticeme">
 <%= paginate @books %>
 </div>
 

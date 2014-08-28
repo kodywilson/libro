@@ -19,6 +19,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'carrierwave'
 # Use kaminari for pagination
 gem 'kaminari'
+# Use ransack for search and sort
+gem 'ransack'
 # Use devise, cancan, and rolify for users, admins, etc
 gem 'devise'
 gem 'cancan'
