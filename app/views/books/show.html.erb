@@ -45,10 +45,12 @@
   <%= @book.following %>
 </p>
 
-<p>
-  <strong>Approved:</strong>
-  <%= @book.approved %>
-</p>
+<% if current_user.try(:admin?) %>
+  <p>
+    <strong>Approved:</strong>
+    <%= @book.approved %>
+  </p>
+<% end %>
 
 <p>
   <strong>Active:</strong>

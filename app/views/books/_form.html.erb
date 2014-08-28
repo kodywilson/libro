@@ -43,10 +43,12 @@
     <%= f.label :following %><br>
     <%= f.check_box :following %>
   </div>
+<% if current_user.try(:admin?) %>
   <div class="field">
     <%= f.label :approved %><br>
     <%= f.check_box :approved %>
   </div>
+<% end %>
   <div class="field">
     <%= f.label :active %><br>
     <%= f.check_box :active %>

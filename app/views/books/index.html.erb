@@ -1,18 +1,25 @@
+<p><%= link_to 'Add Book', new_book_path, class: "new_book" %></p>
 <div class="books">
 <% @books.each do |book| %>
+<% if book.approved? or current_user.try(:admin?) %>
   <div class="book">
     <h2><%= book.title %></h2>
     <p><%= link_to image_tag(book.picture_url, :width => 100), book if book.picture.present? %></p>
     <p>Author: <%= book.author %> |
-    ISBN: <%= book.isbn %> | 
+    ISBN: <%= book.isbn %> |
     Summary: <%= book.summary %></p>
+    <% unless book.approved? and user_signed_in? %>
+    <% if current_user.try(:admin?) %>
+      <h2 class="warn"><%= book.title %> is NOT approved!</h2>
+      <p></p>
+    <% end %>
+    <% end %>
     <%= link_to "Edit", edit_book_path(book), class: "sho_button" %> |
     <%= link_to "Remove", book, method: "delete", confirm: "Are you sure?", class: "nuke_button" %>
   </div>
 <% end %>
+<% end %>
 </div>
-
-<p><%= link_to 'Add Book', new_book_path, class: "new_book" %></p>
 
 <% if user_signed_in? %>
 
