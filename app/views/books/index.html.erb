@@ -1,5 +1,10 @@
 <p><%= link_to 'Add Book', new_book_path, class: "new_book" %></p>
 <div class="books">
+
+<div class="noticeme">
+<%= paginate @books %>
+</div>
+
 <% @books.each do |book| %>
 <% if book.approved? or current_user.try(:admin?) %>
   <div class="book">
