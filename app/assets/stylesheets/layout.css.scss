@@ -53,3 +53,16 @@ a {
   text-decoration: none;
   font-size: 10px;
 }
+
+.noticeme {
+  background-color: rgba(99,209,244,0.6);
+  border: solid 2px #AAA;
+  margin: 20px 0;
+  padding: 7px 12px;
+  color: white;
+  @include border-top-radius(5px);
+  @include border-bottom-radius(5px);
+  @include border-left-radius(5px);
+  @include border-right-radius(5px);
+  @include transition(all, 500ms, ease-in-out);
+}
