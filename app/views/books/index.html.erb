@@ -2,17 +2,17 @@
 <div class="books">
 
 <div class="noticeme">
-  <h2>Search Library</h2>  
+  <h2>Search Library</h2>
 <%= search_form_for @search do |f| %>
-  <div class="field">
-    <b><%= f.label :title_cont, "Title contains:" %></b>
+    <b><%= f.label :title_cont, "Title contains:" %>
     <%= f.text_field :title_cont %>
-  </div>
-  <div class="field">
-    <b><%= f.label :author_cont, "Author contains:" %></b>
+    <%= f.label :author_cont, "Author contains:" %></b>
     <%= f.text_field :author_cont %>
-  </div>
-  <div class="actions"><%= f.submit "Search" %></div>
+    <% if current_user.try(:admin?) %>
+      <p><b><%= f.label :approved_null, "Check to see only books needing approval:" %>
+      <%= f.check_box :approved_null %></p>
+    <% end %>
+  <div class="actions"><%= f.submit %></div>
 <% end %>
 </div>
 

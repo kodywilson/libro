@@ -26,6 +26,8 @@ class BooksController < ApplicationController
   # POST /books.json
   def create
     @book = Book.new(book_params)
+    @current_user = User.find(session[:user_id]) if session[:user_id]
+    @book.update(:contributor => current_user.email)
 
     respond_to do |format|
       if @book.save
