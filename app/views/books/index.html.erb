@@ -30,12 +30,17 @@
     Summary: <%= book.summary %></p>
     <% unless book.approved? and user_signed_in? %>
     <% if current_user.try(:admin?) %>
-      <h2 class="warn"><%= book.title %> is NOT approved!</h2>
+      <h2 class="warn"><%= book.title %> is NOT approved! Update to approve.</h2>
       <p></p>
     <% end %>
     <% end %>
-    <%= link_to "Edit", edit_book_path(book), class: "sho_button" %> |
-    <%= link_to "Remove", book, method: "delete", confirm: "Are you sure?", class: "nuke_button" %>
+    <%= link_to "Edit", edit_book_path(book), class: "sho_button" %>
+    <% @current_user = User.find(session[:user_id]) if session[:user_id] %>
+    <% if user_signed_in? %>
+    <% if current_user.email == book.contributor %>
+     | <%= link_to "Remove", book, method: "delete", confirm: "Are you sure?", class: "nuke_button" %>
+    <% end %>
+    <% end %>
   </div>
 <% end %>
 <% end %>
