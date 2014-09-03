@@ -33,7 +33,7 @@ header.navigation {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .bak_button {
@@ -59,7 +59,7 @@ a {
   border: solid 2px #AAA;
   margin: 20px 0;
   padding: 7px 12px;
-  color: white;
+  color: black;
   @include border-top-radius(5px);
   @include border-bottom-radius(5px);
   @include border-left-radius(5px);
