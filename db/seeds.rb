@@ -8,3 +8,9 @@
 
 admin = User.find_by_email("kodywilson@gmail.com")
 admin.update_attribute :admin, true
+
+admin2 = User.find_by_email("renee@nird.us")
+admin2.update_attribute :admin, true
+
+admin3 = User.find_by_email("bethany@nird.us")
+admin3.update_attribute :admin, true
