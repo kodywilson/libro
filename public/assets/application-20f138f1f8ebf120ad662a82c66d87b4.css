@@ -1,0 +1,368 @@
+/* line 2, c:/Ruby200/lib/ruby/gems/2.0.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, c:/Users/kody/code/rails/libro/app/assets/stylesheets/layout.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+  font-size: 14px;
+  font-family: Verdana, Geneva, sans-serif;
+  background-image: url("library6.jpg");
+  background-image: url("library6.jpg");
+}
+
+/* line 10, c:/Users/kody/code/rails/libro/app/assets/stylesheets/layout.css.scss */
+header.navigation {
+  color: white;
+  padding: 15px 100px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #777777;
+  background-image: -webkit-linear-gradient(#777777, #444444);
+  background-image: linear-gradient(#777777, #444444);
+  box-shadow: 0 0 6px 3px black;
+}
+/* line 18, c:/Users/kody/code/rails/libro/app/assets/stylesheets/layout.css.scss */
+header.navigation .navigation-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/* line 15, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+header.navigation .navigation-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 15, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+header.navigation .navigation-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 24, c:/Users/kody/code/rails/libro/app/assets/stylesheets/layout.css.scss */
+header.navigation .account-stuff {
+  float: right;
+  font-size: 12px;
+}
+
+/* line 30, c:/Users/kody/code/rails/libro/app/assets/stylesheets/layout.css.scss */
+#container {
+  margin: 0 100px;
+}
+
+/* line 34, c:/Users/kody/code/rails/libro/app/assets/stylesheets/layout.css.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 39, c:/Users/kody/code/rails/libro/app/assets/stylesheets/layout.css.scss */
+.bak_button {
+  border: 1px solid #dd9e00;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #f9d477;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: #ffc125;
+  background-image: -webkit-linear-gradient(#ffc125, #eca900);
+  background-image: linear-gradient(#ffc125, #eca900);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffc739;
+  background-clip: padding-box;
+  text-decoration: none;
+  font-size: 10px;
+}
+/* line 131, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.bak_button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #f8c545;
+  cursor: pointer;
+  background-color: #fab810;
+  background-image: -webkit-linear-gradient(#fab810, #dd9e00);
+  background-image: linear-gradient(#fab810, #dd9e00);
+}
+/* line 148, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.bak_button:active:not(:disabled), .bak_button:focus:not(:disabled) {
+  border: 1px solid #dd9e00;
+  box-shadow: inset 0 0 8px 4px #cd9300, inset 0 0 8px 4px #cd9300;
+}
+/* line 51, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.bak_button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* line 45, c:/Users/kody/code/rails/libro/app/assets/stylesheets/layout.css.scss */
+.sho_button {
+  border: 1px solid #258629;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #79c57c;
+  color: white;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: #3fb344;
+  background-image: -webkit-linear-gradient(#3fb344, #28922d);
+  background-image: linear-gradient(#3fb344, #28922d);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #1c7a20;
+  background-clip: padding-box;
+  text-decoration: none;
+  font-size: 10px;
+}
+/* line 131, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.sho_button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #54b758;
+  cursor: pointer;
+  background-color: #3d9c41;
+  background-image: -webkit-linear-gradient(#3d9c41, #26852a);
+  background-image: linear-gradient(#3d9c41, #26852a);
+}
+/* line 148, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.sho_button:active:not(:disabled), .sho_button:focus:not(:disabled) {
+  border: 1px solid #258629;
+  box-shadow: inset 0 0 8px 4px #237827, inset 0 0 8px 4px #237827;
+}
+/* line 51, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.sho_button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* line 51, c:/Users/kody/code/rails/libro/app/assets/stylesheets/layout.css.scss */
+.nuke_button {
+  border: 1px solid #b80000;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #f85454;
+  color: white;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: red;
+  background-image: -webkit-linear-gradient(red, #c70000);
+  background-image: linear-gradient(red, #c70000);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #a30000;
+  background-clip: padding-box;
+  text-decoration: none;
+  font-size: 10px;
+}
+/* line 131, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.nuke_button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #f72222;
+  cursor: pointer;
+  background-color: #e10505;
+  background-image: -webkit-linear-gradient(#e10505, #b80000);
+  background-image: linear-gradient(#e10505, #b80000);
+}
+/* line 148, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.nuke_button:active:not(:disabled), .nuke_button:focus:not(:disabled) {
+  border: 1px solid #b80000;
+  box-shadow: inset 0 0 8px 4px #a80000, inset 0 0 8px 4px #a80000;
+}
+/* line 51, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.nuke_button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* line 57, c:/Users/kody/code/rails/libro/app/assets/stylesheets/layout.css.scss */
+.noticeme {
+  background-color: rgba(99, 209, 244, 0.6);
+  border: solid 2px #AAA;
+  margin: 20px 0;
+  padding: 7px 12px;
+  color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: all, 500ms, ease-in-out;
+  -moz-transition: all, 500ms, ease-in-out;
+  transition: all, 500ms, ease-in-out;
+}
+
+/* line 1, c:/Users/kody/code/rails/libro/app/assets/stylesheets/books.css.scss */
+.book {
+  background-color: rgba(99, 209, 244, 0.6);
+  border: solid 2px #AAA;
+  margin: 20px 0;
+  padding: 7px 12px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: all, 500ms, ease-in-out;
+  -moz-transition: all, 500ms, ease-in-out;
+  transition: all, 500ms, ease-in-out;
+}
+/* line 12, c:/Users/kody/code/rails/libro/app/assets/stylesheets/books.css.scss */
+.book:hover {
+  background-color: #F8FCCF;
+}
+/* line 13, c:/Users/kody/code/rails/libro/app/assets/stylesheets/books.css.scss */
+.book:hover h2 {
+  color: black;
+}
+/* line 14, c:/Users/kody/code/rails/libro/app/assets/stylesheets/books.css.scss */
+.book:hover p {
+  color: black;
+}
+/* line 17, c:/Users/kody/code/rails/libro/app/assets/stylesheets/books.css.scss */
+.book h2 {
+  margin: 0;
+  color: black;
+}
+/* line 20, c:/Users/kody/code/rails/libro/app/assets/stylesheets/books.css.scss */
+.book h2 a {
+  text-decoration: none;
+}
+/* line 23, c:/Users/kody/code/rails/libro/app/assets/stylesheets/books.css.scss */
+.book h2.warn {
+  color: red;
+}
+/* line 27, c:/Users/kody/code/rails/libro/app/assets/stylesheets/books.css.scss */
+.book p {
+  margin: 2;
+  color: black;
+}
+/* line 30, c:/Users/kody/code/rails/libro/app/assets/stylesheets/books.css.scss */
+.book p a {
+  text-decoration: none;
+}
+
+/* line 34, c:/Users/kody/code/rails/libro/app/assets/stylesheets/books.css.scss */
+.new_book {
+  border: 1px solid #16c3fa;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #aee4f5;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: #63d1f4;
+  background-image: -webkit-linear-gradient(#63d1f4, #25c7fa);
+  background-image: linear-gradient(#63d1f4, #25c7fa);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #6fdafd;
+  background-clip: padding-box;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* line 131, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.new_book:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #80d5f1;
+  cursor: pointer;
+  background-color: #4fc8ee;
+  background-image: -webkit-linear-gradient(#4fc8ee, #17c2f9);
+  background-image: linear-gradient(#4fc8ee, #17c2f9);
+}
+/* line 148, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.new_book:active:not(:disabled), .new_book:focus:not(:disabled) {
+  border: 1px solid #16c3fa;
+  box-shadow: inset 0 0 8px 4px #09bef7, inset 0 0 8px 4px #09bef7;
+}
+/* line 51, c:/Ruby200/lib/ruby/gems/2.0.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.new_book:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* line 1, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: black;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: black;
+}
+/* line 23, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: black;
+}
+/* line 26, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: black;
+}
+
+/* line 32, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 37, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 41, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 47, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 54, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 64, c:/Users/kody/code/rails/libro/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
