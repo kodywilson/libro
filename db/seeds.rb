@@ -6,11 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-admin = User.find_by_email("kodywilson@gmail.com")
-admin.update_attribute :admin, true
-
-admin2 = User.find_by_email("renee@nird.us")
-admin2.update_attribute :admin, true
-
-admin3 = User.find_by_email("bethany@nird.us")
-admin3.update_attribute :admin, true
+%w(kodywilson@gmail.com renee@nird.us bethany@nird.us).each do |maily|
+    admin = User.find_by_email(maily)
+    admin.update_attribute :admin, true if admin != nil
+end

@@ -8,6 +8,7 @@ group :development do
 end
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -31,7 +32,7 @@ gem 'devise'
 gem 'cancan'
 gem 'rolify'
 # Use letsrate for rating system
-gem 'letsrate', :git => "git://github.com/iammyr/letsrate.git"
+gem 'letsrate'
 # Use rspec instead of test unit
 gem 'rspec-rails'
 # Test coverage with SimpleCov
@@ -63,6 +64,6 @@ gem 'thin'
 # gem 'debugger', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin]
+#gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 ruby "2.0.0"
