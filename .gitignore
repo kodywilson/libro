@@ -17,3 +17,6 @@
 
 # Ignore SimpleCov coverage output
 coverage
+
+# Ignore images uploaded while developing
+/public/uploads/*
