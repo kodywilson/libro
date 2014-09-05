@@ -236,7 +236,7 @@
 					star = self.opt.iconRange[count];
 
 					if (self.opt.single) {
-						icon = (i == score) ? (star.on || self.opt.starOn) : (star.off || self.opt.starOff);
+						icon = (i === score) ? (star.on || self.opt.starOn) : (star.off || self.opt.starOff);
 					} else {
 						icon = (i <= score) ? (star.on || self.opt.starOn) : (star.off || self.opt.starOff);
 					}
@@ -245,12 +245,12 @@
 						$star.attr('src', self.opt.path + icon);
 					}
 
-					if (i == star.range) {
+					if (i === star.range) {
 						count++;
 					}
 				} else {
 					if (self.opt.single) {
-						icon = (i == score) ? self.opt.starOn : self.opt.starOff;
+						icon = (i === score) ? self.opt.starOn : self.opt.starOff;
 					} else {
 						icon = (i <= score) ? self.opt.starOn : self.opt.starOff;
 					}
@@ -354,7 +354,7 @@
 			if (this.opt.target) {
 				var $target = $(this.opt.target);
 
-				if ($target.length == 0) {
+				if ($target.length === 0) {
 					methods.error.call(this, 'target selector invalid or missing!');
 				}
 
@@ -363,14 +363,14 @@
 				if (!isKeep || score === undefined) {
 					score = this.opt.targetText;
 				} else {
-					if (this.opt.targetType == 'hint') {
+					if (this.opt.targetType === 'hint') {
 						score = (score === null && this.opt.cancel)
-								? this.opt.cancelHint
-								: this.opt.hints[Math.ceil(score - 1)];
+						? this.opt.cancelHint
+						: this.opt.hints[Math.ceil(score - 1)];
 					} else {
 						score = this.opt.precision
-								? parseFloat(score).toFixed(1)
-								: score;
+						? parseFloat(score).toFixed(1)
+						: score;
 					}
 				}
 
@@ -391,7 +391,7 @@
 		}, showHalf: function(score) {
 			var diff = (score - Math.floor(score)).toFixed(1);
 
-			if (diff > 0 && diff < .6) {
+			if (diff > 0 && diff < 0.6) {
 				this.stars.eq(Math.ceil(score) - 1).attr('src', this.opt.path + this.opt.starHalf);
 			}
 		}, initialize: function(score) {
@@ -443,7 +443,7 @@
 		number			: 5,
 		path			: 'img/',
 		precision		: false,
-		round			: { down: .25, full: .6, up: .76 },
+		round			: { down: 0.25, full: 0.6, up: 0.76 },
 		readOnly		: false,
 		score			: undefined,
 		scoreName		: 'score',
