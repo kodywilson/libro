@@ -32,17 +32,17 @@
 
 				$this.data('settings', self.opt);
 
-				if (typeof self.opt.number == 'function') {
+				if (typeof self.opt.number === 'function') {
 					self.opt.number = self.opt.number.call(self);
 				} else {
-					self.opt.number = methods.between(self.opt.number, 0, 20)
+					self.opt.number = methods.between(self.opt.number, 0, 20);
 				}
 
-				if (self.opt.path.substring(self.opt.path.length - 1, self.opt.path.length) != '/') {
+				if (self.opt.path.substring(self.opt.path.length - 1, self.opt.path.length) !== '/') {
 					self.opt.path += '/';
 				}
 
-				if (typeof self.opt.score == 'function') {
+				if (typeof self.opt.score === 'function') {
 					self.opt.score = self.opt.score.call(self);
 				}
 
@@ -82,7 +82,7 @@
 				if (self.opt.cancel) {
 					self.cancel = $('<img />', { src: self.opt.path + self.opt.cancelOff, alt: 'x', title: self.opt.cancelHint, 'class': 'raty-cancel' });
 
-					if (self.opt.cancelPlace == 'left') {
+					if (self.opt.cancelPlace === 'left') {
 						$this.prepend('&#160;').prepend(self.cancel);
 					} else {
 						$this.append('&#160;').append(self.cancel);
@@ -145,8 +145,8 @@
 					self.score.removeAttr('value');
 
 					if (self.opt.click) {
-			          self.opt.click.call(self, null, evt);
-			        }
+            self.opt.click.call(self, null, evt);
+          }
 				});
 			}
 
@@ -155,7 +155,7 @@
 
 				if (self.opt.half) {
 					var position	= parseFloat((evt.pageX - $(this).offset().left) / self.opt.size),
-						diff		= (position > .5) ? 1 : .5;
+						diff		= (position > 0.5) ? 1 : 0.5;
 
 					value = parseFloat(this.alt) - 1 + diff;
 
