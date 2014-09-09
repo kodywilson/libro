@@ -21,8 +21,9 @@ gem 'refills'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-# Use carrierwave for picture uploads
+# Use carrierwave for picture uploads and cloudinary for storage
 gem 'carrierwave'
+gem 'cloudinary'
 # Use kaminari for pagination
 gem 'kaminari'
 # Use ransack for search and sort

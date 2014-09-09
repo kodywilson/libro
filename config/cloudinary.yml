@@ -1,0 +1,20 @@
+---
+development:
+  cloud_name: kodywilson
+  api_key: '912274977818241'
+  api_secret: 2IVuGAe1KLfxd2Va8VnE9TDofVU
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: kodywilson
+  api_key: '912274977818241'
+  api_secret: 2IVuGAe1KLfxd2Va8VnE9TDofVU
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: kodywilson
+  api_key: '912274977818241'
+  api_secret: 2IVuGAe1KLfxd2Va8VnE9TDofVU
+  enhance_image_tag: true
+  static_image_support: false
+
