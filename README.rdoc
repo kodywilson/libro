@@ -10,7 +10,9 @@ Using thin as the web server.
 
 * Configuration
 
-* Database creation = Using sqlite at first.
+* Database creation
+
+rake db:migrate
 
 * Database initialization
 
@@ -20,8 +22,18 @@ Using thin as the web server.
 
 * Deployment instructions
 
+git clone
+bundle install
+rake db:migrate
+Alter seeds.rb with your admin email
+rails s
+sign in using your email
+rake db:seed
+That will make you an admin
+
 * ...
 
+{<img src="https://codeclimate.com/github/kodywilson/libro/badges/gpa.svg" />}[https://codeclimate.com/github/kodywilson/libro]
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
