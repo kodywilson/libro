@@ -30,6 +30,7 @@ gem 'kaminari'
 gem 'ransack'
 # Use devise, cancan, and rolify for users, admins, etc
 gem 'devise'
+gem 'devise_invitable'
 gem 'cancan'
 gem 'rolify'
 # Use letsrate for rating system
