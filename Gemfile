@@ -33,6 +33,8 @@ gem 'devise'
 gem 'devise_invitable'
 gem 'cancan'
 gem 'rolify'
+# Use figaro to securely pass environment variables
+gem 'figaro'
 # Use letsrate for rating system
 gem 'letsrate'
 # Use rspec instead of test unit
