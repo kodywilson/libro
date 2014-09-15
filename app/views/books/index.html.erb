@@ -38,7 +38,7 @@
     <% @current_user = User.find(session[:user_id]) if session[:user_id] %>
     <% if user_signed_in? %>
     <% if current_user.email == book.contributor %>
-     | <%= link_to "Remove", book, method: "delete", confirm: "Are you sure?", class: "nuke_button" %>
+     | <%= link_to "Remove", book, method: "delete", data: { confirm: "Are you sure?" }, class: "nuke_button" %>
     <% end %>
     <% end %>
   </div>

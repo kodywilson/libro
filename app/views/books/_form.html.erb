@@ -49,7 +49,8 @@
     <%= f.label :active %><br>
     <%= f.check_box :active %>
   </div>
-  <div class="sho_button">
-    <%= f.submit %>
+  <div><%= button_tag(type: 'submit', class: "sho_button") do %>
+         Submit
+       <% end %>
   </div>
 <% end %>
